@@ -26,5 +26,6 @@ public class DoorInteractable : InteractableObject
         SceneManager.LoadSceneAsync("TestWinScene", LoadSceneMode.Additive);
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene(NextScene);
+        
     }
 }
