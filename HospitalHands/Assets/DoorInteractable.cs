@@ -7,7 +7,7 @@ public class DoorInteractable : InteractableObject
 {
     public string NextScene;
 
-    public static GameObject trophyParent;
+    public GameObject trophy;
     public override void OnInteracted(PlayerMove player)
     {
         if (player.trophy == true)
@@ -18,8 +18,10 @@ public class DoorInteractable : InteractableObject
 
     private IEnumerator RunWinLevel(PlayerMove player)
     {
-        trophyParent = player.gameObject;
-
+        if (player.trophy)
+        {
+            TrohpyManagement.TrophyPart = trophy.name;
+        }
         player.enabled = false;
         //base.OnInteracted();
         Debug.Log("You finished the scene");
