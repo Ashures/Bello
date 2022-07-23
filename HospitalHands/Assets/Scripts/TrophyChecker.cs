@@ -6,6 +6,10 @@ public class TrophyChecker : MonoBehaviour
 {
     public GameObject trophy;
 
+    private void Awake()
+    {
+    }
+
     // Start is called before the first frame update
     void Start()
     {

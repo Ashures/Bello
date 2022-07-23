@@ -20,6 +20,8 @@ public class CollectTrophy : InteractableObject
             Debug.Log(TrohpyManagement.player2Trophy);
             Debug.Log(player.GetComponent<PlayerMove>().trophy);
 
+
+
             LevelManager.NextLevel += 1;
         }
     }
