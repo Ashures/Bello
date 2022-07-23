@@ -8,5 +8,4 @@ public class InteractableObject : MonoBehaviour
     {
         
     }
-
 }

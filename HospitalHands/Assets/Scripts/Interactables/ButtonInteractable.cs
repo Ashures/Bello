@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class ButtonInteractable : InteractableObject
 {
+
+    private void Update()
+    {
+
+    }
+
     public GameObject SwitchObject;
 
     public override void OnInteracted(PlayerMove player)
