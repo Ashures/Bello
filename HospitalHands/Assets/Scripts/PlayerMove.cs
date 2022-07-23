@@ -10,8 +10,8 @@ public class PlayerMove : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    public Vector2 speed = new Vector2(1f, 1f);
-    public float baseSpeed = 0f;
+    public Vector2 speed = new Vector2(25f, 25f);
+    public float baseSpeed = 25f;
     public bool trophy = false;
     private TrophyMove _trophy;
 
@@ -24,41 +24,46 @@ public class PlayerMove : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
+    {
+        speed = Vector2.zero;
         rb.velocity = Vector2.zero;
 
+        // Single key move
         if(Input.GetKey(upKey))
         {
-            rb.MovePosition(new Vector2(transform.position.x + baseSpeed * Time.deltaTime, transform.position.y + speed.y * Time.deltaTime));
+            //rb.MovePosition(new Vector2(transform.position.x + baseSpeed * Time.deltaTime, transform.position.y + speed.y * Time.deltaTime));
+            speed.y = 1f;
         }
 
         if (Input.GetKey(downKey))
         {
-            rb.MovePosition(new Vector2(transform.position.x + baseSpeed * Time.deltaTime, transform.position.y - speed.y * Time.deltaTime));
+            //rb.MovePosition(new Vector2(transform.position.x + baseSpeed * Time.deltaTime, transform.position.y - speed.y * Time.deltaTime));
+            speed.y = -1f;
         }
 
         if (Input.GetKey(leftKey))
         {
-            rb.MovePosition(new Vector2(transform.position.x - speed.x * Time.deltaTime, transform.position.y + baseSpeed * Time.deltaTime));
+            //rb.MovePosition(new Vector2(transform.position.x - speed.x * Time.deltaTime, transform.position.y + baseSpeed * Time.deltaTime));
+            speed.x = -1f;
         }
 
         if (Input.GetKey(rightKey))
         {
-            rb.MovePosition(new Vector2(transform.position.x + speed.x * Time.deltaTime, transform.position.y + baseSpeed * Time.deltaTime));
+            //rb.MovePosition(new Vector2(transform.position.x + speed.x * Time.deltaTime, transform.position.y + baseSpeed * Time.deltaTime));
+            speed.x = 1f;
         }
+        speed.Normalize();
+        speed *= baseSpeed;
+        rb.MovePosition(new Vector2(transform.position.x + speed.x * Time.deltaTime, transform.position.y + speed.y * Time.deltaTime));
 
         if (Input.GetKeyDown(interactKey))
         {
             Debug.Log("Interact");
-<<<<<<< HEAD
-            
-=======
             if (_trophy != null)
             {
                 _trophy.Drop();
                 _trophy = null;
             }
->>>>>>> 65ceca88d5c15803bc49b6950bd0d9e0a0da1167
         }
 
         
