@@ -11,7 +11,7 @@ public class TrophyInteractable : InteractableObject
     {
         Debug.Log("You win");
         //StartCoroutine(RunWinLevel(player));
-        if (player.CompareTag("Player"))
+        if (player.CompareTag("Player1") || player.CompareTag("Player2"))
         {
             player.trophy = true;
             playerObject = player.gameObject;

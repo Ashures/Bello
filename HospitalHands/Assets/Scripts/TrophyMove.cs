@@ -6,7 +6,7 @@ public class TrophyMove : MonoBehaviour
 {
     //public GameObject player;
     public Vector3 offset = new Vector3(0.01f, 0.01f, 0);
-    public PlayerMove playerObject = null;
+    private PlayerMove playerObject = null;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +26,14 @@ public class TrophyMove : MonoBehaviour
         playerObject = player; 
         transform.SetParent(player.transform, true);
         playerObject.Pickup(this);
+        if (player.gameObject.CompareTag("Player1"))
+        {
+            TrohpyManagement.player1Trophy = true;
+        }
+        else
+        {
+            TrohpyManagement.player2Trophy = true;
+        }
 
         //if (player.GetComponent<PlayerMove>().trophy == true)
         //{
@@ -33,6 +41,8 @@ public class TrophyMove : MonoBehaviour
         //    transform.position = player.transform.position;
         //    transform.position += offset;
         //}
+
+        
     }
 
     public void Drop()
@@ -40,10 +50,22 @@ public class TrophyMove : MonoBehaviour
         if (playerObject != null)
         {
             this.gameObject.GetComponentInParent<PlayerMove>().trophy = false;
+
+            if(this.transform.parent.CompareTag("Player1"))
+            {
+                TrohpyManagement.player1Trophy = false;
+            } 
+            else
+            {
+                TrohpyManagement.player2Trophy = false;
+            }
+
+            Debug.Log(this.transform.parent.name);
             transform.localPosition = transform.localPosition * 1.35f;
 
             transform.SetParent(playerObject.transform.parent, true);
             playerObject = null;
+
             
         }
     }
