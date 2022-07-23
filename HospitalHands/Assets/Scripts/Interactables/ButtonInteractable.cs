@@ -11,7 +11,7 @@ public class ButtonInteractable : InteractableObject
         Debug.Log("button");
         if (SwitchObject != null)
         {
-            SwitchObject.gameObject.SetActive(!SwitchObject.gameObject.active);
+            SwitchObject.gameObject.SetActive(!SwitchObject.gameObject.activeInHierarchy);
         }
         //StartCoroutine(RunWinLevel(player));
     }
