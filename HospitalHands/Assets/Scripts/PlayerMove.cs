@@ -10,10 +10,11 @@ public class PlayerMove : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    public Vector2 moveForce = new Vector2(1f, 1f);
+    public Vector2 speed = new Vector2(1f, 1f);
     public float baseSpeed = 0f;
     public bool trophy = false;
-    
+    private TrophyMove _trophy;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,39 +24,41 @@ public class PlayerMove : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        rb.velocity = Vector2.zero;
+
         if(Input.GetKey(upKey))
         {
-            baseSpeed = 0f;
-            Vector2 movement = new Vector2 (0f, baseSpeed += moveForce.y * Time.deltaTime);
-            rb.transform.Translate(movement);
+            rb.MovePosition(new Vector2(transform.position.x + baseSpeed * Time.deltaTime, transform.position.y + speed.y * Time.deltaTime));
         }
 
         if (Input.GetKey(downKey))
         {
-            baseSpeed = 0f;
-            Vector2 movement = new Vector2(0f, baseSpeed -= moveForce.y * Time.deltaTime);
-            rb.transform.Translate(movement);
+            rb.MovePosition(new Vector2(transform.position.x + baseSpeed * Time.deltaTime, transform.position.y - speed.y * Time.deltaTime));
         }
 
         if (Input.GetKey(leftKey))
         {
-            baseSpeed = 0f;
-            Vector2 movement = new Vector2(baseSpeed -= moveForce.y * Time.deltaTime, 0f);
-            rb.transform.Translate(movement);
+            rb.MovePosition(new Vector2(transform.position.x - speed.x * Time.deltaTime, transform.position.y + baseSpeed * Time.deltaTime));
         }
 
         if (Input.GetKey(rightKey))
         {
-            baseSpeed = 0f;
-            Vector2 movement = new Vector2(baseSpeed += moveForce.y * Time.deltaTime, 0f);
-            rb.transform.Translate(movement);
+            rb.MovePosition(new Vector2(transform.position.x + speed.x * Time.deltaTime, transform.position.y + baseSpeed * Time.deltaTime));
         }
 
         if (Input.GetKeyDown(interactKey))
         {
             Debug.Log("Interact");
+<<<<<<< HEAD
             
+=======
+            if (_trophy != null)
+            {
+                _trophy.Drop();
+                _trophy = null;
+            }
+>>>>>>> 65ceca88d5c15803bc49b6950bd0d9e0a0da1167
         }
 
         
@@ -70,6 +73,11 @@ public class PlayerMove : MonoBehaviour
         {
             interactableObject.OnInteracted(this);
         }
-        trophy = true;
+        
+    }
+
+    public void Pickup(TrophyMove trophy)
+    {
+        _trophy = trophy;
     }
 }
