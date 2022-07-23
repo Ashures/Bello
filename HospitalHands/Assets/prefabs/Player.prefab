@@ -233,7 +233,7 @@ MonoBehaviour:
   rightKey: 100
   interactKey: 101
   speed: {x: 25, y: 25}
-  baseSpeed: 50
+  baseSpeed: 25
   trophy: 0
 --- !u!61 &3756816464526905462
 BoxCollider2D:
