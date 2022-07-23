@@ -2,24 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonInteractable : InteractableObject
+public class ButtonInteractable : MonoBehaviour
 {
-
-    private void Update()
-    {
-
-    }
-
     public GameObject SwitchObject;
+    public bool buttonEntered = false;
 
-    public override void OnInteracted(PlayerMove player)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("button");
+        buttonEntered = true;
         if (SwitchObject != null)
         {
+            Debug.Log("Switch Pressed");
             SwitchObject.gameObject.SetActive(!SwitchObject.gameObject.activeInHierarchy);
         }
-        //StartCoroutine(RunWinLevel(player));
     }
-
+    private void OnTriggerExit2D(Collider2D collision)
+        {
+            buttonEntered = false;
+            if (SwitchObject != null)
+            {
+                Debug.Log("Switch Pressed");
+                SwitchObject.gameObject.SetActive(!SwitchObject.gameObject.activeInHierarchy);
+            }
+        }
 }
