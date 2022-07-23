@@ -315,6 +315,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d428f244ab62f454bb3db1af52b9d797, type: 3}
+--- !u!212 &939773180 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3236286028178267424, guid: 5bcf92d82dd484141bfce089c608626b, type: 3}
+  m_PrefabInstance: {fileID: 3236286027270546102}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &985089863 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7398282247522701640, guid: b2fc024354d0bf046a46ce806470376c, type: 3}
@@ -2758,6 +2763,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3236286028178267424, guid: 5bcf92d82dd484141bfce089c608626b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 22198ac6830fc4743afadea892094c34, type: 3}
     - target: {fileID: 3236286028178267425, guid: 5bcf92d82dd484141bfce089c608626b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2847,9 +2856,21 @@ PrefabInstance:
       value: Switch
       objectReference: {fileID: 0}
     - target: {fileID: 3236286028178267439, guid: 5bcf92d82dd484141bfce089c608626b, type: 3}
+      propertyPath: onSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ffef85c225bae246b337d0d99303745, type: 3}
+    - target: {fileID: 3236286028178267439, guid: 5bcf92d82dd484141bfce089c608626b, type: 3}
+      propertyPath: offSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 22198ac6830fc4743afadea892094c34, type: 3}
+    - target: {fileID: 3236286028178267439, guid: 5bcf92d82dd484141bfce089c608626b, type: 3}
       propertyPath: SwitchObject
       value: 
       objectReference: {fileID: 985089863}
+    - target: {fileID: 3236286028178267439, guid: 5bcf92d82dd484141bfce089c608626b, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 939773180}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bcf92d82dd484141bfce089c608626b, type: 3}
 --- !u!1001 &7398282247613978127
