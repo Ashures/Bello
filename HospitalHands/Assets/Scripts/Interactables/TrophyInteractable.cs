@@ -8,6 +8,7 @@ public class TrophyInteractable : InteractableObject
 
     public override void OnInteracted(PlayerMove player)
     {
+        Debug.Log("You win");
         //StartCoroutine(RunWinLevel(player));
     }
 

@@ -55,6 +55,7 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKeyDown(interactKey))
         {
             Debug.Log("Interact");
+            
         }
 
         
