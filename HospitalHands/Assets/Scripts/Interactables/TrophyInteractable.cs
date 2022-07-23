@@ -4,21 +4,20 @@ using UnityEngine.SceneManagement;
 
 public class TrophyInteractable : InteractableObject
 {
-    public string NextScene;
+    
+    private GameObject playerObject;
 
     public override void OnInteracted(PlayerMove player)
     {
         //StartCoroutine(RunWinLevel(player));
+        if (player.CompareTag("Player"))
+        {
+            player.trophy = true;
+            playerObject = player.gameObject;
+            GetComponent<TrophyMove>().Attach(player);
+        }
     }
 
-    private IEnumerator RunWinLevel(PlayerMove player)
-    {
-        player.enabled = false;
-        //base.OnInteracted();
-        Debug.Log("You got the trophy");
-        SceneManager.LoadSceneAsync("WinScene", LoadSceneMode.Additive);
-        yield return new WaitForSeconds(3);
-        SceneManager.LoadScene(NextScene);
-    }
+    
 
 }
