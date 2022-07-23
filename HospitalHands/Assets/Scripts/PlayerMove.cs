@@ -50,15 +50,12 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKeyDown(interactKey))
         {
             Debug.Log("Interact");
-<<<<<<< HEAD
             
-=======
             if (_trophy != null)
             {
                 _trophy.Drop();
                 _trophy = null;
             }
->>>>>>> 65ceca88d5c15803bc49b6950bd0d9e0a0da1167
         }
 
         
