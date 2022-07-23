@@ -15,7 +15,7 @@ public class ElevatorManager : MonoBehaviour
 
     private IEnumerator Elevator()
     {
-        Debug.Log("loading...");
+        //Debug.Log("loading...");
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene(NextScene);
     }
