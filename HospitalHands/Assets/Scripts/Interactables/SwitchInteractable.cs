@@ -5,6 +5,7 @@ using UnityEngine;
 public class SwitchInteractable : MonoBehaviour
 {
     public GameObject SwitchObject;
+    public GameObject SwitchObject2;
     public bool switchEntered = false;
 
     public Sprite onSprite;
@@ -43,7 +44,12 @@ public class SwitchInteractable : MonoBehaviour
                     SwitchObject.gameObject.SetActive(!SwitchObject.gameObject.activeInHierarchy);
                 }
 
-                if (isOn == false)
+                if (SwitchObject2 != null)
+                {
+                    SwitchObject2.gameObject.SetActive(!SwitchObject2.gameObject.activeInHierarchy);
+                }
+
+            if (isOn == false)
                 {
                     spriteRenderer.sprite = onSprite;
                     isOn = true;
