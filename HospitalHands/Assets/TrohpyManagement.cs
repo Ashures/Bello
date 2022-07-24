@@ -15,4 +15,15 @@ public static class TrohpyManagement
     public static bool rLeg;
 
     public static bool body;
+    public static List<string> TrophyParts = new List<string>();
+
+    public static void SavePart(string part)
+    {
+        TrophyParts.Add(part);
+    }
+    
+    public static bool IsPartCollected(string part)
+    {
+        return TrophyParts.Contains(part);
+    }
 }
