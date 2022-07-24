@@ -15,11 +15,11 @@ public class KeepParts : MonoBehaviour
     void Start()
     {
        body = GetComponent<CollectTrophy>().body;
-       torso = GetComponent<CollectTrophy>().body;
-       lArm = GetComponent<CollectTrophy>().body;
-       rArm = GetComponent<CollectTrophy>().body;
-       lLeg = GetComponent<CollectTrophy>().body;
-       rLeg = GetComponent<CollectTrophy>().body;
+       torso = GetComponent<CollectTrophy>().torso;
+       lArm = GetComponent<CollectTrophy>().lArm;
+       rArm = GetComponent<CollectTrophy>().rArm;
+       lLeg = GetComponent<CollectTrophy>().lLeg;
+       rLeg = GetComponent<CollectTrophy>().rLeg;
     }
 
     // Update is called once per frame
