@@ -35,6 +35,9 @@ public class CollectTrophy : InteractableObject
     }
     public void LoadBody()
     {
+        if (trophy == null)
+            return;
+
         if(trophy.name == "Torso")
         {
             torso.SetActive(true);
