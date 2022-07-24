@@ -130,11 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< HEAD
-    - target: {fileID: 3756816464526905418, guid: d6a791a5b3335b449bc99db189d92516, type: 3}
-      propertyPath: baseSpeed
-      value: 50
-=======
     - target: {fileID: -135324775728115930, guid: d6a791a5b3335b449bc99db189d92516, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -146,7 +141,6 @@ PrefabInstance:
     - target: {fileID: -135324775728115930, guid: d6a791a5b3335b449bc99db189d92516, type: 3}
       propertyPath: m_Offset.y
       value: -0.4
->>>>>>> 12b2284aefbe0a821dac87e14e139a354db96643
       objectReference: {fileID: 0}
     - target: {fileID: 3756816464526905419, guid: d6a791a5b3335b449bc99db189d92516, type: 3}
       propertyPath: m_Name
@@ -456,11 +450,7 @@ Transform:
   - {fileID: 498176407}
   - {fileID: 824875521}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 7
-=======
   m_RootOrder: 6
->>>>>>> 49494bc237a158f938c4dc3b29e68bc0f5369dd5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &498176406
 PrefabInstance:
