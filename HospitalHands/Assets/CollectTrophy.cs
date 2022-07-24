@@ -30,6 +30,17 @@ public class CollectTrophy : InteractableObject
             Debug.Log(TrohpyManagement.player2Trophy);
             Debug.Log(player.GetComponent<PlayerMove>().trophy);
 
+            if (TrohpyManagement.torso && TrohpyManagement.lArm && TrohpyManagement.rArm && TrohpyManagement.lLeg && TrohpyManagement.rLeg)
+            {
+                torso.SetActive(false);
+                lArm.SetActive(false);
+                rArm.SetActive(false);
+                lLeg.SetActive(false);
+                rLeg.SetActive(false);
+
+                body.SetActive(true);
+            }
+
             LevelManager.NextLevel += 1;
         }
     }
@@ -46,22 +57,22 @@ public class CollectTrophy : InteractableObject
         if (trophy.name == "LArm")
         {
             lArm.SetActive(true);
-            TrohpyManagement.torso = true;
+            TrohpyManagement.lArm = true;
         }
         if (trophy.name == "RArm")
         {
             rArm.SetActive(true);
-            TrohpyManagement.torso = true;
+            TrohpyManagement.rArm = true;
         }
         if (trophy.name == "LLeg")
         {
             lLeg.SetActive(true);
-            TrohpyManagement.torso = true;
+            TrohpyManagement.lLeg = true;
         }
         if (trophy.name == "RLeg")
         {
             rLeg.SetActive(true);
-            TrohpyManagement.torso = true;
+            TrohpyManagement.rLeg = true;
         }
     }
 }
