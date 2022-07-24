@@ -48,17 +48,9 @@ public class TrophyChecker : MonoBehaviour
         }
     }
 
-    public void Update()
+    public void LateUpdate()
     {
-        if(TrohpyManagement.torso && TrohpyManagement.lArm && TrohpyManagement.rArm && TrohpyManagement.lLeg && TrohpyManagement.rLeg)
-        {
-            TrohpyManagement.body = true;
-        }
-
-        if (TrohpyManagement.torso)
-        {
-
-        }
+        
     }
 
 

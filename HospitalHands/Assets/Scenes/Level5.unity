@@ -404,6 +404,22 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7134761777337672397, guid: 4febc269efc734741befb079f558a28e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9212694
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134761777337672397, guid: 4febc269efc734741befb079f558a28e, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.9841304
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134761777337672397, guid: 4febc269efc734741befb079f558a28e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134761777337672397, guid: 4febc269efc734741befb079f558a28e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.12
+      objectReference: {fileID: 0}
     - target: {fileID: 7134761777337672398, guid: 4febc269efc734741befb079f558a28e, type: 3}
       propertyPath: trophy
       value: 
@@ -541,7 +557,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1409356762470209096, guid: 89ed511dbad5dcc4da15bad3619c77d4, type: 3}
       propertyPath: m_Name
-      value: Right Arm
+      value: RArm
       objectReference: {fileID: 0}
     - target: {fileID: 1409356762470209098, guid: 89ed511dbad5dcc4da15bad3619c77d4, type: 3}
       propertyPath: m_RootOrder
@@ -591,6 +607,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 859705aff105c1d438a247d88fa21b8f, type: 3}
+    - target: {fileID: 1409356762470209099, guid: 89ed511dbad5dcc4da15bad3619c77d4, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409356762470209099, guid: 89ed511dbad5dcc4da15bad3619c77d4, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409356762470209099, guid: 89ed511dbad5dcc4da15bad3619c77d4, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89ed511dbad5dcc4da15bad3619c77d4, type: 3}
 --- !u!1 &1514126037
