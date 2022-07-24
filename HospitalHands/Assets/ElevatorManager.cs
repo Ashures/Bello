@@ -18,7 +18,7 @@ public class ElevatorManager : MonoBehaviour
     {
         Debug.Log(TrohpyManagement.player2Trophy);
         Debug.Log(TrohpyManagement.player1Trophy);
-        if ((!TrohpyManagement.player1Trophy && TrohpyManagement.player2Trophy) || (TrohpyManagement.player1Trophy && !TrohpyManagement.player2Trophy))
+        if ((!TrohpyManagement.player1Trophy && TrohpyManagement.player2Trophy) || (TrohpyManagement.player1Trophy && !TrohpyManagement.player2Trophy) || (TrohpyManagement.player1Trophy && TrohpyManagement.player2Trophy))
         {
             NextScene = Lobby;
         }
