@@ -214,6 +214,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -135324775728115930, guid: d6a791a5b3335b449bc99db189d92516, type: 3}
+      propertyPath: m_Size.x
+      value: 0.63762355
+      objectReference: {fileID: 0}
+    - target: {fileID: -135324775728115930, guid: d6a791a5b3335b449bc99db189d92516, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6548265
+      objectReference: {fileID: 0}
+    - target: {fileID: -135324775728115930, guid: d6a791a5b3335b449bc99db189d92516, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.068811774
+      objectReference: {fileID: 0}
+    - target: {fileID: -135324775728115930, guid: d6a791a5b3335b449bc99db189d92516, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.32258672
+      objectReference: {fileID: 0}
     - target: {fileID: 3756816464526905419, guid: d6a791a5b3335b449bc99db189d92516, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4856,6 +4872,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gate
       objectReference: {fileID: 0}
+    - target: {fileID: 8561148754756906594, guid: b2fc024354d0bf046a46ce806470376c, type: 3}
+      propertyPath: m_Size.x
+      value: 1.9948684
+      objectReference: {fileID: 0}
+    - target: {fileID: 8561148754756906594, guid: b2fc024354d0bf046a46ce806470376c, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0054662824
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2fc024354d0bf046a46ce806470376c, type: 3}
 --- !u!1 &868239847 stripped
@@ -7775,6 +7799,22 @@ PrefabInstance:
     - target: {fileID: 4094021710321452395, guid: d428f244ab62f454bb3db1af52b9d797, type: 3}
       propertyPath: m_Name
       value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4262822768592968773, guid: d428f244ab62f454bb3db1af52b9d797, type: 3}
+      propertyPath: m_Size.x
+      value: 0.63762355
+      objectReference: {fileID: 0}
+    - target: {fileID: 4262822768592968773, guid: d428f244ab62f454bb3db1af52b9d797, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6548265
+      objectReference: {fileID: 0}
+    - target: {fileID: 4262822768592968773, guid: d428f244ab62f454bb3db1af52b9d797, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4262822768592968773, guid: d428f244ab62f454bb3db1af52b9d797, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.32258672
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d428f244ab62f454bb3db1af52b9d797, type: 3}
