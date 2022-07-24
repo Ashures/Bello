@@ -570,6 +570,8 @@ GameObject:
   m_Component:
   - component: {fileID: 682415541}
   - component: {fileID: 682415542}
+  - component: {fileID: 682415543}
+  - component: {fileID: 682415544}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -599,7 +601,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682415540}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -634,7 +636,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.6933962, b: 0.6933962, a: 0.3137255}
+  m_Color: {r: 0.9716981, g: 0.96048653, b: 0.0779192, a: 0.47058824}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -644,6 +646,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &682415543
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682415540}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eb9e8f797c5e6c44b9fc5bc1763e328a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &682415544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682415540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e9a52d905db744db0339785fce8880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &824875521 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1008216444085357590, guid: 20b19d007b559e8478750d05f7caa4e3, type: 3}
@@ -730,7 +764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1409356762470209096, guid: 89ed511dbad5dcc4da15bad3619c77d4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1409356762470209098, guid: 89ed511dbad5dcc4da15bad3619c77d4, type: 3}
       propertyPath: m_RootOrder
@@ -3154,6 +3188,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trophy: {fileID: 306576716}
+  torso: {fileID: 21300000, guid: 45e3eac3606b43343b48b198579fd920, type: 3}
+  lArm: {fileID: 21300000, guid: ebbf45c23e5ec5f45b5c1941c330a168, type: 3}
+  rArm: {fileID: 21300000, guid: 859705aff105c1d438a247d88fa21b8f, type: 3}
+  lLeg: {fileID: 21300000, guid: 3be34512e7a8a0746afd4c664379197d, type: 3}
+  rLeg: {fileID: 21300000, guid: 4abc40f1332904348aabf8440a7d6d99, type: 3}
 --- !u!4 &1836689586
 Transform:
   m_ObjectHideFlags: 0

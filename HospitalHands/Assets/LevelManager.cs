@@ -16,16 +16,16 @@ public static class LevelManager
                 NextScene = "TestLevel1";
                 return NextScene;
             case 1:
-                NextScene = "TestLevel2";
+                NextScene = "Level2";
                 return NextScene;
             case 2:
-                NextScene = "TestLevel3";
+                NextScene = "Level3";
                 return NextScene;
             case 3:
-                NextScene = "TestLevel4";
+                NextScene = "Level4";
                 return NextScene;
             case 4:
-                NextScene = "TestLevel5";
+                NextScene = "Level5";
                 return NextScene;
             default:
                 Debug.Log("Error");

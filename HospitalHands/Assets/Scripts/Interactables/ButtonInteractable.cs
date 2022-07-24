@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ButtonInteractable : MonoBehaviour
 {
-    public GameObject SwitchObject;
+    public List<GameObject> SwitchObject;
     public bool buttonEntered = false;
     public Sprite onSprite;
     public Sprite offSprite;
@@ -21,8 +21,11 @@ public class ButtonInteractable : MonoBehaviour
         buttonEntered = true;
         if (SwitchObject != null)
         {
-            Debug.Log("Switch Pressed");
-            SwitchObject.gameObject.SetActive(!SwitchObject.gameObject.activeInHierarchy);
+            Debug.Log(SwitchObject);
+            foreach (GameObject switchObject in SwitchObject)
+            {
+                switchObject.gameObject.SetActive(!switchObject.gameObject.activeInHierarchy);
+            }
             playerCount++;
             spriteRenderer.sprite = onSprite;
         }
@@ -32,8 +35,10 @@ public class ButtonInteractable : MonoBehaviour
          buttonEntered = false;
          if (SwitchObject != null)
          {
-             Debug.Log("Switch Pressed");
-             SwitchObject.gameObject.SetActive(!SwitchObject.gameObject.activeInHierarchy);
+            foreach (GameObject switchObject in SwitchObject)
+            {
+                switchObject.gameObject.SetActive(!switchObject.gameObject.activeInHierarchy);
+            }
              playerCount--;
             if (playerCount <= 0)
             {
