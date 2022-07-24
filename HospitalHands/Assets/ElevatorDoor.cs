@@ -17,12 +17,9 @@ public class ElevatorDoor : InteractableObject
 
     private void RunElevator(PlayerMove player)
     {
-        if (!TrohpyManagement.player1Trophy || !TrohpyManagement.player2Trophy)
+        if (!TrohpyManagement.player1Trophy && !TrohpyManagement.player2Trophy)
         {
             SceneManager.LoadScene(NextScene);
         }
     }
 }
-
-
-
