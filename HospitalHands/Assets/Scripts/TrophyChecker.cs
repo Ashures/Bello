@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class TrophyChecker : MonoBehaviour
 {
     public GameObject trophy;
@@ -24,18 +23,23 @@ public class TrophyChecker : MonoBehaviour
             {
                 case "Torso":
                     trophy.GetComponent<SpriteRenderer>().sprite = torso;
+                    trophy.name = "Torso";
                     break;
                 case "LArm":
                     trophy.GetComponent<SpriteRenderer>().sprite = lArm;
+                    trophy.name = "LArm";
                     break;
                 case "RArm":
                     trophy.GetComponent<SpriteRenderer>().sprite = rArm;
+                    trophy.name = "RArm";
                     break;
                 case "LLeg":
                     trophy.GetComponent<SpriteRenderer>().sprite = lLeg;
+                    trophy.name = "LLeg";
                     break;
                 case "RLeg":
                     trophy.GetComponent<SpriteRenderer>().sprite = rLeg;
+                    trophy.name = "RLeg";
                     break;
                 case "Trophy":
                     break;
@@ -43,5 +47,21 @@ public class TrophyChecker : MonoBehaviour
             trophy.SetActive(true);
         }
     }
+
+    public void Update()
+    {
+        if(TrohpyManagement.torso && TrohpyManagement.lArm && TrohpyManagement.rArm && TrohpyManagement.lLeg && TrohpyManagement.rLeg)
+        {
+            TrohpyManagement.body = true;
+        }
+
+        if (TrohpyManagement.torso)
+        {
+
+        }
+    }
+
+
+    
 
 }

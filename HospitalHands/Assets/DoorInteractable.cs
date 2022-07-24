@@ -24,7 +24,7 @@ public class DoorInteractable : InteractableObject
         }
         player.enabled = false;
         //base.OnInteracted();
-        Debug.Log("You finished the scene");
+        //Debug.Log("You finished the scene");
         SceneManager.LoadSceneAsync("TestWinScene", LoadSceneMode.Additive);
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene(NextScene);
