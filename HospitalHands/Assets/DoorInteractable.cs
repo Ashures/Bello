@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class DoorInteractable : InteractableObject
 {
     public string NextScene;
+    public GameObject timer;
 
     public GameObject trophy;
     public override void OnInteracted(PlayerMove player)
@@ -18,6 +19,7 @@ public class DoorInteractable : InteractableObject
 
     private IEnumerator RunWinLevel(PlayerMove player)
     {
+        timer.SetActive(false);
         if (player.trophy)
         {
             TrohpyManagement.TrophyPart = trophy.name;
