@@ -18,7 +18,7 @@ public class Introduction : MonoBehaviour
     private IEnumerator IntroScene()
     {
         yield return RunFlash();
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("SampleScene 1");
     }
 
     private WaitForSeconds _waiter;
@@ -34,6 +34,7 @@ public class Introduction : MonoBehaviour
         redPanel.SetActive(true);
         yield return _waiter;
         redPanel.SetActive(false);
+        yield return _waiter;
     }
 
 }
