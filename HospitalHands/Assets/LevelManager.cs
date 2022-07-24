@@ -13,7 +13,7 @@ public static class LevelManager
         switch (NextLevel)
         {
             case 0:
-                NextScene = "TestLevel1";
+                NextScene = "Level1";
                 return NextScene;
             case 1:
                 NextScene = "Level2";

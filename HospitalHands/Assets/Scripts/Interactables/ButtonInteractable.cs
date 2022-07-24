@@ -18,6 +18,15 @@ public class ButtonInteractable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        switch (collision.tag)
+        {
+            case "Player1":
+            case "Player2":
+                break;
+            default:
+                return;
+        }
+
         buttonEntered = true;
         if (SwitchObject != null)
         {
@@ -32,6 +41,15 @@ public class ButtonInteractable : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
+        switch (collision.tag)
+        {
+            case "Player1":
+            case "Player2":
+                break;
+            default:
+                return;
+        }
+
          buttonEntered = false;
          if (SwitchObject != null)
          {
