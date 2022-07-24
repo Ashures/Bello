@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollectTrophy : InteractableObject
 {
@@ -12,6 +13,8 @@ public class CollectTrophy : InteractableObject
     public GameObject rArm;
     public GameObject lLeg;
     public GameObject rLeg;
+
+    public string NextScene;
 
 
     // Start is called before the first frame update
@@ -31,6 +34,7 @@ public class CollectTrophy : InteractableObject
             Debug.Log(player.GetComponent<PlayerMove>().trophy);
 
             LevelManager.NextLevel += 1;
+
         }
     }
     public void LoadBody()
@@ -75,6 +79,10 @@ public class CollectTrophy : InteractableObject
             rLeg.SetActive(false);
 
             body.SetActive(true);
+
+            SceneManager.LoadScene(NextScene);
         }
     }
+
+
 }

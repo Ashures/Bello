@@ -240,6 +240,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d18922c5e61581543b5100af8ed3338e, type: 3}
+--- !u!1 &84955229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5534158757648437673, guid: d18922c5e61581543b5100af8ed3338e, type: 3}
+  m_PrefabInstance: {fileID: 84955228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &229168371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4314,6 +4319,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: dc06c97b5261f1d4d88ed69f81d059bf, type: 3}
     - target: {fileID: 7134761777337672398, guid: 4febc269efc734741befb079f558a28e, type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 84955229}
+    - target: {fileID: 7134761777337672398, guid: 4febc269efc734741befb079f558a28e, type: 3}
       propertyPath: trophy
       value: 
       objectReference: {fileID: 463864983}
@@ -5153,7 +5162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4094021710321452393, guid: d428f244ab62f454bb3db1af52b9d797, type: 3}
       propertyPath: baseSpeed
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4094021710321452395, guid: d428f244ab62f454bb3db1af52b9d797, type: 3}
       propertyPath: m_Name
@@ -8497,7 +8506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3756816464526905418, guid: d6a791a5b3335b449bc99db189d92516, type: 3}
       propertyPath: baseSpeed
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3756816464526905419, guid: d6a791a5b3335b449bc99db189d92516, type: 3}
       propertyPath: m_Name

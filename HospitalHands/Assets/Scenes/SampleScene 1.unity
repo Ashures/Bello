@@ -7536,6 +7536,7 @@ MonoBehaviour:
   rArm: {fileID: 1048902145}
   lLeg: {fileID: 270714327}
   rLeg: {fileID: 679304349}
+  NextScene: EndScene
 --- !u!58 &1425572008
 CircleCollider2D:
   m_ObjectHideFlags: 0

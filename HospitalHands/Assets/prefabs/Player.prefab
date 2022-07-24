@@ -232,8 +232,8 @@ MonoBehaviour:
   leftKey: 97
   rightKey: 100
   interactKey: 101
-  speed: {x: 25, y: 25}
-  baseSpeed: 25
+  speed: {x: 1, y: 1}
+  baseSpeed: 10
   trophy: 0
 --- !u!70 &-135324775728115930
 CapsuleCollider2D:
